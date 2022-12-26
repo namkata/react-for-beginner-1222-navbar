@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Poppins";
+        src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,900;1,200&display=swap");
+    }
+    * {
+        padding: 0;
+        left: 0;
+        top: 10px;
+        box-sizing: border-box;
+        font-family: "Poppins";
+    }
+    .sidebar-container{
+        @apply bg-glass h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid border-glass relative
+    }
+    .sidebar {
+        @apply flex items-center mt-2 p-4 rounded-lg cursor-pointer hover:bg-white transition-all duration-300
+    }
+    .sidebar:last-child{
+        margin-top: 12rem;
+    }
+}
