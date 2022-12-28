@@ -15,12 +15,15 @@
         font-family: "Poppins";
     }
     .sidebar-container{
-        @apply bg-glass h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid border-glass relative
+        @apply bg-glass h-[96%] w-[20rem] rounded-3xl ml-6 mr-6 p-4 border transition-all duration-500 border-solid border-glass relative
     }
     .sidebar {
         @apply flex items-center mt-2 p-4 rounded-lg cursor-pointer hover:bg-white transition-all duration-300
     }
     .sidebar:last-child{
         margin-top: 12rem;
+    }
+    .body-container{
+        @apply flex w-full h-[96%] rounded-3xl ml-20 mr-20 p-3 border border-solid transition-all duration-500 border-glass bg-glass relative
     }
 }
